@@ -1,1 +1,44 @@
 <?php
+
+use Drupal\Core\Cache\CacheableMetadata;
+use Drupal\node\NodeInterface;
+
+
+/**
+ * Implements hook_preprocess_search_result().
+ */
+function custom_code_preprocess_search_result(array &$variables) {
+  // Only handle node results produced by the core Node search plugin.
+  if (($variables['plugin_id'] ?? '') !== 'node_search') {
+    return;
+  }
+
+  $node = $variables['result']['node'];
+
+  $direct_image_field = 'field_product_img';
+
+  $build = NULL;
+
+  if ($node->hasField($direct_image_field) && !$node->get($direct_image_field)->isEmpty()) {
+    $build = $node->get($direct_image_field)->first()->view([
+      'type' => 'image',
+      'settings' => [
+        'image_style' => 'thumbnail',
+        'image_link'  => 'content',
+      ],
+    ]);
+  }
+
+
+  if ($build) {
+    $variables['thumbnail'] = $build;
+
+    // Ensure correct cacheability (so if image changes, result invalidates).
+    CacheableMetadata::createFromRenderArray($build)->applyTo($variables);
+
+    // Also add node cache tags to be safe.
+    $cacheable = new CacheableMetadata();
+    $cacheable->setCacheTags($node->getCacheTags());
+    $cacheable->applyTo($variables);
+  }
+}

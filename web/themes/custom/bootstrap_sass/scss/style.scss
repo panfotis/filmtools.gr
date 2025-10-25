@@ -411,3 +411,29 @@ ol.breadcrumb{
     }
 
 }
+
+
+
+.contact-line {
+
+    max-width: 620px;
+
+    p {
+        margin-bottom: 0;
+        font-size: $fs-24;
+    }
+
+    img {
+        width: 42px;
+    }
+
+}
+.block-contact-block {
+    background: #E6E6E6;
+    padding: MinMaxCalc(22,32);
+
+    label {
+        font-size: 18px;
+        padding-bottom: 4px;
+    }
+}

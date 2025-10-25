@@ -49,9 +49,100 @@
     height: MinMaxCalc(30, 48);
     max-width: MinMaxCalc(30, 48);
     min-width: MinMaxCalc(30, 48);
-    background-color: #000;
     color: #fff;
     border-radius: 50%;
+    border:1px solid $black;
   }
+
+}
+
+
+
+
+form.search-form {
+
+  display: flex;
+  justify-content: center;
+  margin-bottom: 64px;
+
+  .form-item-keys {
+    margin-right: 12px;
+
+    input {
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+  }
+
+
+  .search-help-link,
+  details,
+  label {
+    display: none;
+  }
+}
+
+@include media-breakpoint-down(md){
+  form.search-form{
+    display: block !important;
+
+    > div{
+      width:100%;
+
+      >div {
+        width: 100%;
+      }
+
+      input,
+      button{
+        width:100%;
+      }
+    }
+  }
+}
+
+
+
+
+/**
+* SEARCH RESURTS PAGE
+*/
+
+
+.path-search {
+
+  #block-bootstrap-sass-breadcrumbs {
+    display: none;
+  }
+
+  h1.title {
+    text-align: center;
+  }
+
+  .content h2,
+  .content em {
+    display: block;
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 22px;
+  }
+
+    .list-group.node_search-results {
+      max-width: 880px;
+      margin: 0 auto;
+
+      .list-group-item {
+        padding: MinMaxCalc(22, 30) MinMaxCalc(22, 30) MinMaxCalc(22, 30) MinMaxCalc(12, 20);
+
+        img{
+          min-width:100px;
+          height: auto;
+        }
+
+        a{
+          font-size: $fs-24;
+        }
+      }
+    }
 
 }

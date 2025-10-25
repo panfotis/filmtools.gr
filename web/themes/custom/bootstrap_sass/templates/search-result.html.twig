@@ -1,0 +1,25 @@
+{# themes/custom/MYTHEME/templates/search-result.html.twig #}
+<article class="search-result d-flex align-items-start">
+
+	{% if thumbnail %}
+		<div class="search-result__thumb">
+			{{ thumbnail }}
+		</div>
+	{% endif %}
+
+  <div>
+    <h3 class="search-result__title">
+      <a href="{{ url }}">{{ title }}</a>
+    </h3>
+
+    {% if snippet %}
+      <div class="search-result__snippet">{{ snippet|raw }}</div>
+    {% endif %}
+
+    {% if info %}
+      <div class="search-result__meta">{{ info }}</div>
+    {% endif %}
+  </div>
+
+</article>
+
