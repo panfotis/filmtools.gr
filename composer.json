@@ -32,6 +32,7 @@
         "drupal/menu_breadcrumb": "^2.0",
         "drupal/migrate_upgrade": "^4.0",
         "drupal/migrate_wizard": "^3.0",
+        "drupal/redirect": "^1.12",
         "drupal/taxonomy_manager": "^2.0",
         "drupal/taxonomy_menu": "^3.7",
         "drupal/twig_tweak": "^3.4",
