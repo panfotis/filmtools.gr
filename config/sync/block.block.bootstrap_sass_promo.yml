@@ -1,0 +1,30 @@
+uuid: 1c4f2c99-1ea2-4d0c-abb3-9db54f43f831
+langcode: el
+status: true
+dependencies:
+  content:
+    - 'block_content:promo:7c8aadcd-be75-4fb1-bc62-089032de5408'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_sass
+id: bootstrap_sass_promo
+theme: bootstrap_sass
+region: featured_top
+weight: 0
+provider: null
+plugin: 'block_content:7c8aadcd-be75-4fb1-bc62-089032de5408'
+settings:
+  id: 'block_content:7c8aadcd-be75-4fb1-bc62-089032de5408'
+  label: Promo
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

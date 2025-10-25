@@ -1,0 +1,15 @@
+uuid: 0828ed21-1aec-4fab-add2-ee72b2e5af08
+langcode: el
+status: true
+dependencies: {  }
+name: '1800'
+label: '1800'
+effects:
+  a691d367-37e6-47a3-893b-0efb9a0046ae:
+    uuid: a691d367-37e6-47a3-893b-0efb9a0046ae
+    id: image_scale
+    weight: 1
+    data:
+      width: 1800
+      height: null
+      upscale: false

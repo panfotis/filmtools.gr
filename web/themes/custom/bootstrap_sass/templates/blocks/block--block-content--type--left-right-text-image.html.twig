@@ -1,0 +1,32 @@
+{%
+  set classes = [
+    'block',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class,
+		'pb-64 pb-lg-128'
+
+  ]
+%}
+<div{{attributes.addClass(classes)}}>
+	{{ title_prefix }}
+	{{ title_suffix }}
+
+	{% set swap = content.field_swap_image_text.0['#markup'] %}
+
+	<div class="row g-32 gx-lg-128">
+		<div class="col-12 col-lg-6 {{ swap ? 'order-lg-1' : 'order-lg-2' }}">
+			{{content.field_image.0}}
+		</div>
+		<div class="col-12 col-lg-6 d-lg-flex align-items-center {{ swap ? 'order-lg-2' : 'order-lg-1' }}">
+			<div>
+				<div class="pill bg-gray">{{ label }}</div>
+				<h2 class="fs-52 fw-800 mb-20">
+					{{content.field_title.0}}
+				</h2>
+				{{content.body.0}}
+				<a href="{{ content.field_button.0['#url'] }}" class="btn btn-primary">{{ content.field_button.0['#title'] }}</a>
+			</div>
+		</div>
+
+	</div>
+</div>

@@ -1,0 +1,36 @@
+uuid: 3b9ca416-0ee5-4e6a-a8f9-a8ac82ea6f8f
+langcode: el
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.teaser
+    - field.field.taxonomy_term.product_categories.field_category_img
+    - taxonomy.vocabulary.product_categories
+  module:
+    - image
+    - text
+id: taxonomy_term.product_categories.teaser
+targetEntityType: taxonomy_term
+bundle: product_categories
+mode: teaser
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_category_img:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

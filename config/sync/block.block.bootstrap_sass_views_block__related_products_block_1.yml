@@ -1,0 +1,33 @@
+uuid: 57bae08f-d6b6-4aba-b2c4-c67750183f7c
+langcode: el
+status: true
+dependencies:
+  config:
+    - views.view.related_products
+  module:
+    - node
+    - views
+  theme:
+    - bootstrap_sass
+id: bootstrap_sass_views_block__related_products_block_1
+theme: bootstrap_sass
+region: featured_bottom_first
+weight: -8
+provider: null
+plugin: 'views_block:related_products-block_1'
+settings:
+  id: 'views_block:related_products-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: null
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      products: products

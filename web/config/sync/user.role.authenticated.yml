@@ -1,0 +1,27 @@
+uuid: 7e665170-a9b2-4595-af0a-ccdaad556482
+langcode: el
+status: true
+dependencies:
+  config:
+    - filter.format.filtered_html
+  module:
+    - comment
+    - contact
+    - filter
+    - search
+    - system
+_core:
+  default_config_hash: cFrlqjtkTfvY3RGccjJkPf1SGIfJ942IrxTLWAO4mgA
+id: authenticated
+label: 'authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'post comments'
+  - 'search content'
+  - 'skip comment approval'
+  - 'use advanced search'
+  - 'use text format filtered_html'

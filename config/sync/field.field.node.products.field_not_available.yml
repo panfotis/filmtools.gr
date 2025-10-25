@@ -1,0 +1,23 @@
+uuid: 12bde392-33f7-47a9-93d7-fc2bd00cc31a
+langcode: el
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_not_available
+    - node.type.products
+id: node.products.field_not_available
+field_name: field_not_available
+entity_type: node
+bundle: products
+label: 'not available'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: ''
+  off_label: ''
+field_type: boolean

@@ -1,0 +1,23 @@
+uuid: ca5e1c1a-a0fa-41e4-999d-7b4aa42a5736
+langcode: el
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_on_order
+    - node.type.products
+id: node.products.field_on_order
+field_name: field_on_order
+entity_type: node
+bundle: products
+label: 'ΚΑΤΟΠΙΝ ΠΑΡΑΓΓΕΛΙΑΣ'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: ''
+  off_label: ''
+field_type: boolean

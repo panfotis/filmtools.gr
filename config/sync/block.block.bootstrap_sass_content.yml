@@ -1,0 +1,22 @@
+uuid: c2dd4384-81ec-4959-9e31-df2669fda29a
+langcode: el
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bootstrap_sass
+_core:
+  default_config_hash: sVeT646GH13jDn-0COP6Gu5r2HDPHlyFnnbkC0wL4lU
+id: bootstrap_sass_content
+theme: bootstrap_sass
+region: content
+weight: -3
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Περιεχόμενο κεντρικής σελίδας'
+  label_display: '0'
+  provider: system
+visibility: {  }

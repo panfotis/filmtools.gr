@@ -1,0 +1,413 @@
+/*
+Theme Name: Bootstrap 4 Sass
+Description: Bootstrap 4 with Sass
+*/
+
+// import files
+@import "import";
+
+/* GENERAL STYLES
+-------------------------------------------------*/
+
+body {
+    background: #F3F3F1;
+    font-family: "Manrope", sans-serif;
+    font-style: normal;
+}
+
+.container-fluid{
+    max-width:1620px;
+    margin:0 auto;
+    padding-left: MinMaxCalc(26, 65);
+    padding-right: MinMaxCalc(26, 65);
+}
+
+p{
+    font-size: $fs-18;
+
+    .fs-24 > &{
+        font-size: $fs-24;
+    }
+}
+
+a{
+    color:#000000;
+}
+
+
+.bg-gray{
+    background: #E6E6E6;
+}
+
+.fw-800{
+    font-weight: 800;
+}
+
+
+ol.breadcrumb{
+    margin-bottom:0;
+}
+
+
+.btn.btn-primary{
+
+    background-color: #000;
+    color: #fff;
+    padding: 12px 28px;
+    border-radius: 32px;
+    transition: background-color ease .3s;
+    border:0;
+
+    &:hover {
+        background-color: #333333;
+    }
+
+}
+
+#block-bootstrap-sass-page-title,
+.title-wrapper{
+
+    margin-bottom: MinMaxCalc(28, 42);
+
+    h1{
+        font-size: $fs-64;
+        font-weight:800;
+    }
+}
+
+.custom-card{
+    background:#fff;
+    border:1px solid $gray;
+    padding: 24px 24px 20px 24px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    h2{
+        font-weight: 600;
+    }
+
+    .card-image-wrapper {
+        aspect-ratio: 1/1;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        margin-left:-20px;
+        margin-right:-20px;
+
+        img{
+            transition: scale ease .3s;
+        }
+    }
+
+    .card-image-wrapper:hover,
+    &:has(h2:hover){
+        img{
+            scale: 1.1;
+        }
+    }
+
+
+    &.product-card{
+        hr{
+            margin-top:auto;
+        }
+
+        [class^="term--"]{
+            padding: 6px 12px 6px 6px;
+            font-size: $fs-12;
+            gap:6px;
+            &:before{
+                width:8px;
+                height:8px;
+            }
+        }
+    }
+
+}
+
+
+
+// PRODUCT NODES
+.node--type-products.node--view-mode-full{
+
+    .image-gallery-carousel-wrapper {
+        aspect-ratio: 1/1;
+        background: #fff;
+        display: flex;
+        align-items: center;
+
+        .swiper-slide {
+                height: auto;
+                display: flex;
+                align-items: center;
+        }
+
+    }
+
+    .product-categories a {
+        border: 1px solid #D4D4D4;
+        padding: 2px 10px;
+        border-radius: 4px;
+        font-size: $fs-14;
+        background: #fff;
+    }
+
+}
+
+.product-status-pill {
+    position: absolute;
+    background: #F3F3F1;
+    padding: 2px 8px;
+    font-size: 12px;
+    border-radius: 4px;
+
+    .image-gallery-carousel-wrapper & {
+        right: 22px;
+        top: 24px;
+    }
+
+    .product-card &{
+        top: 18px;
+        left:18px;
+
+    }
+
+}
+
+.term--3793,
+.term--3794 {
+    border-radius: 4px;
+    padding: 8px 20px 8px 8px;
+    font-weight: bold;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: $fs-14;
+
+    &:before {
+        content: '';
+        width: 13px;
+        height: 13px;
+        display: block;
+        border-radius: 50%;
+    }
+}
+.term--3794 {
+    background: #C7B9F2;
+
+    &:before {
+        background: #5E3ADD;
+    }
+}
+.term--3793 {
+    background: #66EFB8;
+
+    &:before {
+        background: #1D7E57;
+    }
+}
+#edit-field-offer-type-target-id {
+
+    margin-bottom: MinMaxCalc(22,32);
+
+    #edit-field-offer-type-target-id--wrapper.mb-3{
+        margin-bottom:0 !important;
+    }
+
+    ul {
+        padding: 0;
+        margin:0;
+        list-style: none;
+        display: flex;
+        gap: 22px;
+
+        li {
+            .js-form-item {
+                padding: 12px;
+                background: $gray;
+                line-height: 1;
+                border-radius: 4px;
+                display: inline-flex;
+                align-items: center;
+                position: relative;
+
+                gap: 8px;
+
+                &:before {
+                    content: '';
+                    width: 13px;
+                    height: 13px;
+                    display: block;
+                    border-radius: 50%;
+                    background: #000;
+                }
+
+                &:has(input[type="radio"]:checked) {
+                    background: #fff;
+                }
+
+                &:has(#edit-field-offer-type-target-id-3794):has(input[type="radio"]:checked) {
+                    background: #C7B9F2;
+                }
+                &:has(#edit-field-offer-type-target-id-3794){
+                    &:before {
+                        background: #5E3ADD;
+                    }
+                }
+
+                &:has(#edit-field-offer-type-target-id-3793):has(input[type="radio"]:checked) {
+                    background: #66EFB8;
+                }
+                &:has(#edit-field-offer-type-target-id-3793) {
+                    &:before {
+                        background: #1D7E57;
+                    }
+                }
+
+                input[type="radio"] {
+                    position: absolute;
+                    opacity: 0;
+                    pointer-events: none;
+                }
+                label{
+                    &:after{
+                        content:'';
+                        position: absolute;
+                        left:0;
+                        right:0;
+                        top:0;
+                        bottom:0;
+                    }
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+.block-views {
+    >h2 {
+        font-size: $fs-52;
+        font-weight: 800;
+        margin-bottom: MinMaxCalc(48,64);
+        text-align: center;
+    }
+}
+.view-related-products {
+    .swiper-slide {
+        height: auto;
+    }
+
+    .swiper-scrollbar.swiper-scrollbar-horizontal {
+        bottom: -40px;
+    }
+}
+
+
+.site-footer{
+    p{
+        margin-bottom:0;
+    }
+
+    .footer-bottom{
+        font-size:14px;
+        p,
+        a{
+            font-size: 14px;
+        }
+    }
+}
+
+
+#block-bootstrap-sass-epikoinonia {
+    p {
+        font-size: $fs-24;
+        margin-bottom: 0;
+    }
+}
+
+
+.pill {
+    font-size: 16px;
+    font-weight: 800;
+    display: inline-block;
+    padding: 3px 16px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+}
+
+.block-inline-blockleft-right-text-image {
+    p {
+        font-size: $fs-24;
+        margin-bottom: 42px;
+        max-width: 80%;
+    }
+
+    img{
+        border:1px solid $gray;
+    }
+}
+
+
+#block-bootstrap-sass-promo {
+
+    p {
+        margin-bottom: 0;
+    }
+
+    .images img {
+        width: 100% !important;
+        height: 460px;
+        object-fit: cover;
+        flex: 1 1 0;
+        display: block;
+        min-width: 0;
+    }
+
+    .description {
+        font-size: MinMaxCalc(18,20);
+    }
+
+    .total-categories,
+    .total-products {
+
+        font-size: $fs-24;
+
+        span {
+            font-size: MinMaxCalc(54,90);
+            font-weight: 100;
+            display: block;
+            line-height: 1;
+        }
+
+    }
+}
+
+
+.block-telephone {
+
+    padding: 4px 0;
+
+    img {
+        width: 30px;
+        height: auto;
+    }
+
+    p {
+        margin-bottom: 0;
+        line-height: 1;
+    }
+
+    a {
+        color: #fff;
+        font-size: 16px;
+        line-height: 1;
+    }
+
+}

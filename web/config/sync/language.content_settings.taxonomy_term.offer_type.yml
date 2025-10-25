@@ -1,0 +1,11 @@
+uuid: 18fcc473-9812-4602-9654-ddfe8a17f668
+langcode: el
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.offer_type
+id: taxonomy_term.offer_type
+target_entity_type_id: taxonomy_term
+target_bundle: offer_type
+default_langcode: site_default
+language_alterable: false

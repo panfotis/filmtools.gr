@@ -1,0 +1,15 @@
+uuid: 66464e95-7728-4c7f-b80c-5c937ab121d7
+langcode: el
+status: true
+dependencies: {  }
+name: catalog_images
+label: 'catalog images'
+effects:
+  c00c8854-ada5-4d82-9d51-ea3171f91bea:
+    uuid: c00c8854-ada5-4d82-9d51-ea3171f91bea
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 350
+      height: 265
+      anchor: center-center

@@ -1,0 +1,19 @@
+uuid: b141cdd2-647e-44d7-ad88-68a6656f9b9f
+langcode: el
+status: true
+dependencies:
+  config:
+    - block_content.type.promo
+    - field.storage.block_content.field_total_categories
+id: block_content.promo.field_total_categories
+field_name: field_total_categories
+entity_type: block_content
+bundle: promo
+label: 'Total categories'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

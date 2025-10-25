@@ -1,0 +1,15 @@
+uuid: a86debf3-462d-44ee-8af9-a891e32d88ac
+langcode: el
+status: true
+dependencies: {  }
+name: products_view
+label: products_view
+effects:
+  fd635b45-85fc-4854-9e59-90eec4ed43c6:
+    uuid: fd635b45-85fc-4854-9e59-90eec4ed43c6
+    id: image_scale
+    weight: 1
+    data:
+      width: 550
+      height: null
+      upscale: false

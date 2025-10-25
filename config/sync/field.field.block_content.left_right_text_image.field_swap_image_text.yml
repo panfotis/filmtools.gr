@@ -1,0 +1,21 @@
+uuid: 3939fda2-3cc0-494c-91eb-e4824aa1dd47
+langcode: el
+status: true
+dependencies:
+  config:
+    - block_content.type.left_right_text_image
+    - field.storage.block_content.field_swap_image_text
+id: block_content.left_right_text_image.field_swap_image_text
+field_name: field_swap_image_text
+entity_type: block_content
+bundle: left_right_text_image
+label: 'Swap image text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: '1'
+  off_label: '0'
+field_type: boolean

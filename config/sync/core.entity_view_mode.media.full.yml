@@ -1,0 +1,13 @@
+uuid: 3d17736b-8141-47e1-bb23-4643b7591f8d
+langcode: el
+status: false
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: dTfAUHooYV0uOVPO3saGpgv-c5PppJXDwxvwRTJOycM
+id: media.full
+label: Full
+description: ''
+targetEntityType: media
+cache: true

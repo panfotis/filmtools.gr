@@ -1,0 +1,25 @@
+uuid: 7f013372-a0d4-46ea-b579-bcc8f9930d11
+langcode: el
+status: true
+dependencies:
+  content:
+    - 'block_content:plain_text:f3f127be-16d2-46c5-bf27-333a719d62bf'
+  module:
+    - block_content
+  theme:
+    - bootstrap_sass
+id: bootstrap_sass_telephone
+theme: bootstrap_sass
+region: secondary_menu
+weight: 0
+provider: null
+plugin: 'block_content:f3f127be-16d2-46c5-bf27-333a719d62bf'
+settings:
+  id: 'block_content:f3f127be-16d2-46c5-bf27-333a719d62bf'
+  label: Telephone
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

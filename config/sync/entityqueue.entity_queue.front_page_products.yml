@@ -1,0 +1,20 @@
+uuid: 216fa021-c1a6-457e-95b1-321da1ee31e2
+langcode: el
+status: true
+dependencies:
+  module:
+    - node
+id: front_page_products
+label: 'front page products'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      - products
+queue_settings:
+  min_size: 0
+  max_size: 8
+  act_as_queue: false

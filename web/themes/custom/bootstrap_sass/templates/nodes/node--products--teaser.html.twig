@@ -1,0 +1,32 @@
+<div class="custom-card product-card position-relative">
+    <a class="card-image-wrapper" href="{{url}}">
+        {{ content.field_product_img.0}}
+
+
+        {% if node.field_on_order.0.value or node.field_not_available.0.value or  not node.field_free_text.isEmpty() %}
+            <div class="product-status-pill">
+                {% if node.field_on_order.0.value  %}
+                    {{ 'ΚΑΤΟΠΙΝ ΠΑΡΑΓΓΕΛΙΑΣ'|t }}
+                {% endif %}
+                {% if node.field_not_available.0.value  %}
+                    {{ 'ΜΗ ΔΙΑΘΕΣΙΜΟ'|t }}
+                {% endif %}
+                {% if not node.field_free_text.isEmpty()  %}
+                    {{ content.field_free_text.0 }}
+                {% endif %}
+            </div>
+        {% endif %}
+
+
+    </a>
+    <div class="d-flex align-items-center gap-3 pb-2">
+        {{ content.field_offer_type }}
+    </div>
+    <a class="d-block" href="{{url}}">
+        <h2 class="fs-18 fw-400 lh-base pb-3">{{label.0}}</h2>
+    </a>
+    <hr>
+    <div class="category fs-12">
+        {{ content.field_category.0 }}
+    </div>
+</div>

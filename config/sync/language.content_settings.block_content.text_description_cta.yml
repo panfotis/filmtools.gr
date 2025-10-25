@@ -1,0 +1,11 @@
+uuid: 8334b023-1558-435b-816f-df5374135293
+langcode: el
+status: true
+dependencies:
+  config:
+    - block_content.type.text_description_cta
+id: block_content.text_description_cta
+target_entity_type_id: block_content
+target_bundle: text_description_cta
+default_langcode: site_default
+language_alterable: false

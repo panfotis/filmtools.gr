@@ -1,0 +1,57 @@
+.modal.modal-search {
+  padding: 0 !important;
+
+  .modal-dialog {
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    margin: 0;
+  }
+
+  .modal-content {
+    height: 100%;
+    border: 0;
+    border-radius: 0;
+    background: rgba(255, 255, 255, 0.8);
+  }
+
+  .modal-body {
+    overflow-y: auto;
+    padding: 30px;
+
+    .block-search-form-block,
+    .content.container-inline {
+      width: 100%;
+      max-width: 800px;
+      gap: 32px;
+
+      form {
+        gap: 18px;
+
+        .js-form-item {
+          flex: 1;
+          margin-right: MinMaxCalc(8, 24);
+        }
+
+      }
+    }
+
+  }
+
+  .btn-close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 10;
+    opacity: 1;
+    font-size: 14px;
+    width: MinMaxCalc(30, 48);
+    height: MinMaxCalc(30, 48);
+    max-width: MinMaxCalc(30, 48);
+    min-width: MinMaxCalc(30, 48);
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+  }
+
+}

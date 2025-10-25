@@ -1,0 +1,9 @@
+uuid: df6a8300-2b68-4a6f-8902-b195a20e8041
+langcode: el
+status: true
+dependencies: {  }
+name: 'Product Categories'
+vid: product_categories
+description: null
+weight: -10
+new_revision: false

@@ -1,0 +1,20 @@
+uuid: 23dd529d-4e78-4816-b910-cf722d276ed5
+langcode: el
+status: false
+dependencies:
+  theme:
+    - bootstrap_sass
+_core:
+  default_config_hash: SYK5JJBjWN82DyhpVjZ9wTsHwZsLs-S28ERb5pvkDos
+id: bootstrap_sass_primary_admin_actions
+theme: bootstrap_sass
+region: content
+weight: -6
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Πρωτεύουσες ενέργειες διαχείρισης'
+  label_display: '0'
+  provider: core
+visibility: {  }

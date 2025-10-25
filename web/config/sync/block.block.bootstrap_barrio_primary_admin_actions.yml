@@ -1,0 +1,20 @@
+uuid: 035ff77e-ccc8-42a7-a23c-83f6b432d98f
+langcode: el
+status: true
+dependencies:
+  theme:
+    - bootstrap_barrio
+_core:
+  default_config_hash: MY-b6RFbUcofefyaeI8uMqaPh2bJOasn2y1bvGVF4dw
+id: bootstrap_barrio_primary_admin_actions
+theme: bootstrap_barrio
+region: content
+weight: -6
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Πρωτεύουσες ενέργειες διαχείρισης'
+  label_display: '0'
+  provider: core
+visibility: {  }

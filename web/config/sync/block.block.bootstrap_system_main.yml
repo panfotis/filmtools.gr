@@ -1,0 +1,20 @@
+uuid: 6c4b0e32-3156-45c0-83f0-23d44e718917
+langcode: el
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - bootstrap
+id: bootstrap_system_main
+theme: bootstrap
+region: ''
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: ''
+  label_display: '0'
+  provider: system
+visibility: {  }

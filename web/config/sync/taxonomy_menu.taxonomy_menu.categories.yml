@@ -1,0 +1,16 @@
+uuid: c1257dd6-c8dd-4633-bee6-14f2d2938862
+langcode: el
+status: true
+dependencies:
+  config:
+    - system.menu.categories
+    - taxonomy.vocabulary.product_categories
+id: categories
+label: Κατηγορίες
+vocabulary: product_categories
+menu: categories
+expanded: true
+depth: 2
+menu_parent: 'categories:'
+description_field_name: ''
+use_term_weight_order: true

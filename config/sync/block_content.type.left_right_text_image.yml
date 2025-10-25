@@ -1,0 +1,8 @@
+uuid: 1aaa01b8-b8cf-42c0-996b-605d469e22b5
+langcode: el
+status: true
+dependencies: {  }
+id: left_right_text_image
+label: 'Left right text image'
+revision: false
+description: null

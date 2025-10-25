@@ -1,0 +1,13 @@
+uuid: f48f723a-6888-4851-9b0e-cfbe86ce3d53
+langcode: el
+status: true
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: nvrL9bFilzBvm2bjO9rQnFDpBA7dBBUjShSSt6NS-DU
+id: user_cancel_user_action
+label: 'Ακύρωση επιλεγμένων λογαριασμών χρηστών'
+type: user
+plugin: user_cancel_user_action
+configuration: {  }

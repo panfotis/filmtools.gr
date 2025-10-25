@@ -1,0 +1,35 @@
+uuid: fe93dcb5-61cd-42ff-9373-1b6bc1cb5bdf
+langcode: el
+status: true
+dependencies: {  }
+id: upgrade_locale_settings
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 6'
+  - 'Drupal 7'
+  - Configuration
+migration_group: migrate_drupal_7
+label: 'Locale configuration'
+source:
+  plugin: variable
+  variables:
+    - locale_cache_strings
+    - locale_js_directory
+  source_module: locale
+process:
+  cache_strings:
+    -
+      plugin: get
+      source: locale_cache_strings
+  javascript/directory:
+    -
+      plugin: get
+      source: locale_js_directory
+destination:
+  plugin: config
+  config_name: locale.settings
+migration_dependencies:
+  required: {  }
+  optional: {  }

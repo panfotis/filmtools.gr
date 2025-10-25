@@ -1,0 +1,9 @@
+uuid: e68b07ff-eb20-40c7-805e-a42a9643e33e
+langcode: el
+status: true
+dependencies: {  }
+name: 'Offer Type'
+vid: offer_type
+description: null
+weight: -9
+new_revision: false

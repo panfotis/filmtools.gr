@@ -1,0 +1,35 @@
+global-styling:
+  version: VERSION
+  js:
+    js/popper.min.js: { weight: -49 }
+    js/bootstrap.min.js: { weight: -48 }
+    js/barrio.js: {}
+    js/custom.js: {}
+  css:
+    component:
+      css/style.css: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+
+swiper_carousel:
+  css:
+    theme:
+      https://unpkg.com/swiper/swiper-bundle.min.css: {type: external, minified: true}
+  js:
+    https://unpkg.com/swiper/swiper-bundle.min.js: {type: external, minified: true}
+
+fancybox:
+  js:
+    https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js: {type: external, minified: true}
+  css:
+    theme:
+      https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css: {type: external, minified: true}
+
+
+product_images:
+  js:
+    js/product-images.js: {}
+  dependencies:
+    - bootstrap_sass/fancybox
+    - bootstrap_sass/swiper_carousel

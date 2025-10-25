@@ -1,0 +1,14 @@
+uuid: e90bc33d-4e0d-467c-b9de-95147d451672
+langcode: el
+status: true
+dependencies:
+  config:
+    - user.role.store_owner
+  module:
+    - user
+id: user_add_role_action.store_owner
+label: 'Add the store owner role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: store_owner

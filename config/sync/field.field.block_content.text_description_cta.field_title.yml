@@ -1,0 +1,19 @@
+uuid: 4de94d2f-93fc-4348-a7ed-85a376651327
+langcode: el
+status: true
+dependencies:
+  config:
+    - block_content.type.text_description_cta
+    - field.storage.block_content.field_title
+id: block_content.text_description_cta.field_title
+field_name: field_title
+entity_type: block_content
+bundle: text_description_cta
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

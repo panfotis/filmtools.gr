@@ -1,0 +1,14 @@
+uuid: 8ccc9a77-5b18-48e5-b0ca-cd0012e39757
+langcode: el
+status: true
+dependencies:
+  config:
+    - user.role.store_owner
+  module:
+    - user
+id: user_remove_role_action.store_owner
+label: 'Remove the store owner role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: store_owner

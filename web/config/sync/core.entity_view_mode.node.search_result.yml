@@ -1,0 +1,13 @@
+uuid: 02b2bee8-8ba8-41af-918a-33bb6e01de61
+langcode: el
+status: false
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: d8wBEm7XvJ6H3S0IneDD9PfTBklPIH7GMpxElVemPf8
+id: node.search_result
+label: 'Αποτέλεσμα αναζήτησης με επισήμανση της εισόδου'
+description: ''
+targetEntityType: node
+cache: true

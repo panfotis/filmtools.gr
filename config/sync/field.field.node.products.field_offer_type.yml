@@ -1,0 +1,29 @@
+uuid: 78e0319a-1770-41c9-82c5-e8542e75ca55
+langcode: el
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_offer_type
+    - node.type.products
+    - taxonomy.vocabulary.offer_type
+id: node.products.field_offer_type
+field_name: field_offer_type
+entity_type: node
+bundle: products
+label: 'Offer type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:filter_existing_terms'
+  handler_settings:
+    target_bundles:
+      offer_type: offer_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

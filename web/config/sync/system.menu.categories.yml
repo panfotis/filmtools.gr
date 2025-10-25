@@ -1,0 +1,8 @@
+uuid: 4dd2efdf-79da-4cd6-a838-ce8b8d11e7a4
+langcode: el
+status: true
+dependencies: {  }
+id: categories
+label: Κατηγορίες
+description: ''
+locked: false

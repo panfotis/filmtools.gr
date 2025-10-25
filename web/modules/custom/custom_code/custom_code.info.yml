@@ -1,0 +1,5 @@
+name: 'custom_code'
+type: module
+description: 'Various functions for filmtools'
+package: Custom
+core_version_requirement: ^10 || ^11

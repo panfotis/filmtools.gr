@@ -1,0 +1,20 @@
+uuid: 022ccfbc-2be2-42cb-bb05-3354e4187442
+langcode: el
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - bartik
+id: bartik_system_main
+theme: bartik
+region: ''
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: ''
+  label_display: '0'
+  provider: system
+visibility: {  }

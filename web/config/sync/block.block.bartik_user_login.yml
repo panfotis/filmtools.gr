@@ -1,0 +1,20 @@
+uuid: 49bbba61-612f-4ede-a8f2-80c501ba612e
+langcode: el
+status: false
+dependencies:
+  module:
+    - user
+  theme:
+    - bartik
+id: bartik_user_login
+theme: bartik
+region: ''
+weight: 0
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: ''
+  label_display: '0'
+  provider: user
+visibility: {  }

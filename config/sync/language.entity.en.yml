@@ -1,0 +1,9 @@
+uuid: db356251-b13e-4f13-a319-ffbd7fbb20f5
+langcode: el
+status: true
+dependencies: {  }
+id: en
+label: English
+direction: ltr
+weight: -9
+locked: false

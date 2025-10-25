@@ -1,0 +1,10 @@
+uuid: ea005d90-0e2b-42fe-a506-d4de382e836c
+langcode: el
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: bqZsN31T2n0UjcbyCpOPi9D2iO0sAOHR7FnEs9qMvaA
+id: comment
+label: 'Προεπιλεγμένα σχόλια'
+target_entity_type_id: node
+description: 'Επιτρέπει τον σχολιασμό στο περιεχόμενο'

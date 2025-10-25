@@ -1,0 +1,32 @@
+uuid: 78dba6c1-e6f1-4890-93d3-54f42c6d7eaf
+langcode: el
+status: true
+dependencies:
+  config:
+    - node.type.products
+  module:
+    - contact
+    - locale
+    - node
+    - search
+    - system
+    - taxonomy
+id: store_owner
+label: 'store owner'
+weight: 3
+is_admin: false
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access site-wide contact form'
+  - 'administer nodes'
+  - 'administer taxonomy'
+  - 'create products content'
+  - 'delete any products content'
+  - 'delete own products content'
+  - 'edit any products content'
+  - 'edit own products content'
+  - 'search content'
+  - 'translate interface'
+  - 'use advanced search'
+  - 'view the administration theme'

@@ -1,0 +1,24 @@
+uuid: f5e0034c-b6d4-46f1-adca-3f96238a30b0
+langcode: el
+status: false
+dependencies:
+  config:
+    - views.view.comments_recent
+  module:
+    - views
+  theme:
+    - seven
+id: seven_comment_recent
+theme: seven
+region: ''
+weight: 0
+provider: null
+plugin: 'views_block:comments_recent-block_1'
+settings:
+  id: 'views_block:comments_recent-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: null
+visibility: {  }

@@ -1,0 +1,25 @@
+uuid: 3c11475f-4a65-435b-abe0-e47a760f3dbd
+langcode: el
+status: true
+dependencies:
+  config:
+    - filter.format.filtered_html
+  module:
+    - comment
+    - contact
+    - filter
+    - search
+    - system
+_core:
+  default_config_hash: 6WavjUYXIegP9AAg2zXGx54MWIVoomC3SZhNiqe-Dyk
+id: anonymous
+label: 'anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'search content'
+  - 'use advanced search'
+  - 'use text format filtered_html'

@@ -1,0 +1,12 @@
+uuid: 6bbc8911-222b-45bd-9052-85f520400210
+langcode: el
+status: true
+dependencies: {  }
+id: website_feedback
+label: 'Website feedback'
+recipients:
+  - c.theodoroudis@gmail.com
+reply: ''
+weight: 0
+message: null
+redirect: null

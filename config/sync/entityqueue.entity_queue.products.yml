@@ -1,0 +1,20 @@
+uuid: 1e07c3d3-90f1-44f6-98bb-0873e08e841c
+langcode: el
+status: true
+dependencies:
+  module:
+    - node
+id: products
+label: Products
+handler: multiple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      - products
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false

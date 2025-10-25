@@ -1,0 +1,8 @@
+uuid: 3864a41a-3efb-4805-a99d-edc6a6b02f21
+langcode: el
+status: true
+dependencies: {  }
+id: plain_text
+label: 'Plain text'
+revision: false
+description: null

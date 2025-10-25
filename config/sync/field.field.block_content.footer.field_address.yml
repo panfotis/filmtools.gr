@@ -1,0 +1,22 @@
+uuid: 56db4d07-725d-4156-93ed-6b381c7a51f2
+langcode: el
+status: true
+dependencies:
+  config:
+    - block_content.type.footer
+    - field.storage.block_content.field_address
+  module:
+    - text
+id: block_content.footer.field_address
+field_name: field_address
+entity_type: block_content
+bundle: footer
+label: Address
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

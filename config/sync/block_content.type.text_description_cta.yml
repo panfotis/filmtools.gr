@@ -1,0 +1,8 @@
+uuid: 292795fb-5ea9-49a3-94a4-82a6b3d6c3f3
+langcode: el
+status: true
+dependencies: {  }
+id: text_description_cta
+label: 'Text description cta'
+revision: false
+description: null

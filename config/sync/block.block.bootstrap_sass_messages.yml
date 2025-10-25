@@ -1,0 +1,22 @@
+uuid: 5792ee6c-48cb-427b-80c1-da1fb6cafd1c
+langcode: el
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bootstrap_sass
+_core:
+  default_config_hash: DN6akgkD8VA8t5a4xV7xFlBDzhOark3Yl-3vQUO04Jw
+id: bootstrap_sass_messages
+theme: bootstrap_sass
+region: highlighted
+weight: -6
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Μηνύματα κατάστασης'
+  label_display: '0'
+  provider: system
+visibility: {  }

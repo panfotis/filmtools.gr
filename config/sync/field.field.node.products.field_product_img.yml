@@ -1,0 +1,38 @@
+uuid: 52ba72cb-fb52-4ac7-ac5d-642f72f626a5
+langcode: el
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_product_img
+    - node.type.products
+  module:
+    - image
+id: node.products.field_product_img
+field_name: field_product_img
+entity_type: node
+bundle: products
+label: product_img
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: ''
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: 2mb
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: true
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: '[node:title]'
+    title: ''
+    width: null
+    height: null
+field_type: image

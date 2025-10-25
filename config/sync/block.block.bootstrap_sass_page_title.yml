@@ -1,0 +1,26 @@
+uuid: b624a840-c894-4481-b0d4-f6a724bfcd48
+langcode: el
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bootstrap_sass
+_core:
+  default_config_hash: fxzTrJi7CHk8a5Ff8lmkQLrujHZJyMpFIFIS00Q0a9w
+id: bootstrap_sass_page_title
+theme: bootstrap_sass
+region: content
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Τίτλος σελίδας'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/node/*\r\n/taxonomy/term/*"

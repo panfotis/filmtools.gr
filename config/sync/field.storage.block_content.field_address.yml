@@ -1,0 +1,19 @@
+uuid: 7197422e-6866-4cd3-9922-f3988aa54378
+langcode: el
+status: true
+dependencies:
+  module:
+    - block_content
+    - text
+id: block_content.field_address
+field_name: field_address
+entity_type: block_content
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

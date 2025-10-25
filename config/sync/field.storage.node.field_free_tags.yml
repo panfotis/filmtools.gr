@@ -1,0 +1,20 @@
+uuid: bdb40f0c-97ba-4089-a2c4-84c0e3a4a472
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_free_tags
+field_name: field_free_tags
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

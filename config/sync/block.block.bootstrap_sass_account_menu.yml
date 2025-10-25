@@ -1,0 +1,27 @@
+uuid: f3d5f8f7-427e-4813-90d9-a49ffb0c2701
+langcode: el
+status: false
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - bootstrap_sass
+_core:
+  default_config_hash: 1RKXbmlAiISDVgmyTUQVBWRJCHEvhzx8tHr8HX8rpj4
+id: bootstrap_sass_account_menu
+theme: bootstrap_sass
+region: secondary_menu
+weight: -7
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'Μενού λογαριασμού χρήστη'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

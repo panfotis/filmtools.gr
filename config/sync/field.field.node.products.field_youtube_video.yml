@@ -1,0 +1,21 @@
+uuid: 5c34a9f1-6bc6-4c51-ab0a-5292c2a30656
+langcode: el
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_youtube_video
+    - node.type.products
+  module:
+    - youtube
+id: node.products.field_youtube_video
+field_name: field_youtube_video
+entity_type: node
+bundle: products
+label: 'Youtube video'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: youtube

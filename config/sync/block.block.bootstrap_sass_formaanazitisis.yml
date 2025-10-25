@@ -1,0 +1,21 @@
+uuid: acf2d8a0-6dbc-4138-b831-5007c73bca28
+langcode: el
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - bootstrap_sass
+id: bootstrap_sass_formaanazitisis
+theme: bootstrap_sass
+region: header_form
+weight: 0
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Φόρμα αναζήτησης'
+  label_display: '0'
+  provider: search
+  page_id: null
+visibility: {  }

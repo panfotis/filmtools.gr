@@ -1,0 +1,22 @@
+uuid: f90709ff-7027-419d-a212-6547e13dd419
+langcode: el
+status: true
+dependencies:
+  theme:
+    - bootstrap_barrio
+_core:
+  default_config_hash: IsKUlBAi-gl90iZ3w0OI3XZvSYDrtxg4nF1aDhfLWIA
+id: bootstrap_barrio_primary_local_tasks
+theme: bootstrap_barrio
+region: content
+weight: -5
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Πρωτεύουσες καρτέλες'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

@@ -1,0 +1,17 @@
+@use "sass:math";
+
+@function MinMaxCalc($minSize, $maxSize, $minWidth: 380, $maxWidth: 1440) {
+  // source: https://css-tricks.com/linearly-scale-font-size-with-css-clamp-based-on-the-viewport/
+  // convert to rem
+  $minSize: math.div($minSize, 16);
+  $maxSize: math.div($maxSize, 16);
+  $maxWidth: math.div($maxWidth, 16);
+  $minWidth: math.div($minWidth, 16);
+  // do calculations
+  $slope: math.div(($maxSize - $minSize), ($maxWidth - $minWidth));
+  $yAxisIntersection: - $minWidth * $slope + $minSize;
+  // output as rem
+  $minSize: $minSize * 1rem;
+  $maxSize: $maxSize * 1rem;
+  @return max(#{$minSize}, min(#{$yAxisIntersection * 1rem} + #{$slope * 100vw}, #{$maxSize}));
+}

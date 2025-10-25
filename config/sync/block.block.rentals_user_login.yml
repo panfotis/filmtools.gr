@@ -1,0 +1,20 @@
+uuid: e4538be7-269b-4697-9b0c-699a02578211
+langcode: el
+status: false
+dependencies:
+  module:
+    - user
+  theme:
+    - rentals
+id: rentals_user_login
+theme: rentals
+region: ''
+weight: 0
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: ''
+  label_display: '0'
+  provider: user
+visibility: {  }

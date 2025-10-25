@@ -1,0 +1,15 @@
+uuid: bc4b829d-978d-4b62-b550-e6347f40565b
+langcode: el
+status: true
+dependencies: {  }
+name: admin_products
+label: 'admin products'
+effects:
+  6418ccdc-9cda-44b3-ba45-5d95c9115a85:
+    uuid: 6418ccdc-9cda-44b3-ba45-5d95c9115a85
+    id: image_scale
+    weight: 1
+    data:
+      width: 100
+      height: null
+      upscale: false

@@ -1,0 +1,29 @@
+uuid: 351a217c-7096-412f-b069-3c4a9ce9ceec
+langcode: el
+status: true
+dependencies:
+  config:
+    - system.menu.categories
+  module:
+    - system
+  theme:
+    - bootstrap_sass
+id: bootstrap_sass_katigories
+theme: bootstrap_sass
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:categories'
+settings:
+  id: 'system_menu_block:categories'
+  label: Κατηγορίες
+  label_display: visible
+  provider: system
+  level: 1
+  depth: null
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

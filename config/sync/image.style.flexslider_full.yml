@@ -1,0 +1,15 @@
+uuid: aa053d96-e983-4eef-9bfa-77f83b1bfed1
+langcode: el
+status: true
+dependencies: {  }
+name: flexslider_full
+label: flexslider_full
+effects:
+  bc274af3-6df4-4ea2-b068-ece8139fb2dc:
+    uuid: bc274af3-6df4-4ea2-b068-ece8139fb2dc
+    id: image_scale
+    weight: -10
+    data:
+      width: 550
+      height: null
+      upscale: true

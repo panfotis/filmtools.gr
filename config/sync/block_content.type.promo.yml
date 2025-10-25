@@ -1,0 +1,8 @@
+uuid: b88cd0f2-09d7-4293-811a-1c32d52d4433
+langcode: el
+status: true
+dependencies: {  }
+id: promo
+label: Promo
+revision: false
+description: null

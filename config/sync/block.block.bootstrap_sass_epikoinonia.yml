@@ -1,0 +1,30 @@
+uuid: 84e5682f-3276-4e98-acf6-b1825dc4ea58
+langcode: el
+status: true
+dependencies:
+  content:
+    - 'block_content:text_description_cta:3ce22fe0-d63a-4c2e-a351-2a6d2d858211'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_sass
+id: bootstrap_sass_epikoinonia
+theme: bootstrap_sass
+region: featured_bottom_second
+weight: -7
+provider: null
+plugin: 'block_content:3ce22fe0-d63a-4c2e-a351-2a6d2d858211'
+settings:
+  id: 'block_content:3ce22fe0-d63a-4c2e-a351-2a6d2d858211'
+  label: Επικοινωνία
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: /contact

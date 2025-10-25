@@ -1,0 +1,22 @@
+uuid: 39064ee3-aaf6-4927-931c-6f68de3d4c2f
+langcode: el
+status: true
+dependencies:
+  config:
+    - block_content.type.footer
+    - field.storage.block_content.field_telephone
+  module:
+    - text
+id: block_content.footer.field_telephone
+field_name: field_telephone
+entity_type: block_content
+bundle: footer
+label: telephone
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long
